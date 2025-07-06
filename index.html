@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Charity: Water - Measurable Change</title>
-  <link href="https://fonts.googleapis.com/css2?family=Avenir&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Avenir', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       background-color: #FFF7E1;
       color: #1A1A1A;
       animation: fadeInBody 1s ease-in;
@@ -36,8 +36,7 @@
 
     .hero-image img {
       width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
     }
 
     .content {
@@ -48,36 +47,28 @@
 
     h1 {
       font-size: 2.2rem;
+      color: #77A8BB;
       margin-bottom: 20px;
     }
 
-    h1 span.blue {
-      color: #2E9DF7;
-    }
-
-    h1 span.yellow {
+    .highlight {
+      font-weight: bold;
       color: #FFC907;
     }
 
     p {
       font-size: 1.2rem;
       line-height: 1.6;
-      margin-bottom: 15px;
-    }
-
-    .cta-text {
-      font-weight: bold;
-      color: #FFC907;
     }
 
     .cta-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 14px 30px;
+      margin-top: 25px;
+      padding: 12px 25px;
       background-color: #FFC907;
-      color: #1A1A1A;
+      color: #000;
       border: none;
-      border-radius: 6px;
+      border-radius: 5px;
       font-size: 1rem;
       cursor: pointer;
       text-decoration: none;
@@ -93,12 +84,11 @@
       margin-top: 30px;
       display: flex;
       align-items: center;
-      gap: 15px;
     }
 
     .logo img {
-      height: 70px;
-      width: auto;
+      height: 80px;
+      margin-right: 15px;
     }
 
     @media (max-width: 600px) {
@@ -106,13 +96,8 @@
         flex-direction: column;
         text-align: center;
       }
-
       h1 {
-        font-size: 1.8rem;
-      }
-
-      .logo {
-        justify-content: center;
+        font-size: 1.6rem;
       }
     }
   </style>
@@ -123,12 +108,9 @@
       <img src="img/charity-water.jpg" alt="Child with water jug">
     </div>
     <div class="content" data-aos="fade-left">
-      <h1>
-        <span class="blue">Be the Leader Who Brings</span><br>
-        <span class="yellow">Measurable Change.</span>
-      </h1>
+      <h1>Be the Leader Who Brings <br> <span class="highlight">Measurable Change.</span></h1>
       <p>Join a global movement where your values meet real world impact, help fund clean water projects backed by transparency and data.</p>
-      <p class="cta-text">Fund a Future. Give Clean Water.</p>
+      <p class="highlight">Fund a Future. Give Clean Water.</p>
       <a class="cta-button" href="#">Donate Now</a>
 
       <div class="logo">
