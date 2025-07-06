@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity: Water - Measurable Change</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fff8e7;
+      color: #2d2d2d;
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .hero-image {
+      flex: 1 1 300px;
+      max-width: 500px;
+      padding: 10px;
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .content {
+      flex: 1 1 300px;
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #2E9DF7;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #FFC907;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #FFC907;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background-color: #FF902A;
+      transform: scale(1.05);
+    }
+
+    .logo {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-image" data-aos="fade-right">
+      <img src="img/charity-water.jpg" alt="Child with water jug">
+    </div>
+    <div class="content" data-aos="fade-left">
+      <h1>Be the Leader Who Brings <br> <span class="highlight">Measurable Change.</span></h1>
+      <p>Join a global movement where your values meet real world impact, help fund clean water projects backed by transparency and data.</p>
+      <p class="highlight">Fund a Future. Give Clean Water.</p>
+      <a class="cta-button" href="#">Donate Now</a>
+
+      <div class="logo">
+        <img src="img/charity-water-logo.png" alt="Charity Water Logo">
+        <span><strong>charity: water</strong><br>SUPPORTER</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
